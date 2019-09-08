@@ -1,0 +1,26 @@
+﻿@page
+@model CakeSale_GemmaWorkExperience.Pages.RequestCakeModel
+@{
+    ViewData["Title"] = "Request Cake";
+}
+<h1>Request A Cake!</h1>
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <input type="text" name="@Model.customername" placeholder="Name" />
+    <br />
+    <br />
+    Cake Type <select name="caketype">
+        <option value="chocolate">Chocolate</option>
+        <option value="vanilla">Vanilla</option>
+        <option value="carrot">Carrot</option>
+        <option value="funfetti">Funfetti</option>
+
+    </select>
+    <br />
+    <br />
+    <input type="submit" value="Get Cake!" />
+</form>
+
+
+
